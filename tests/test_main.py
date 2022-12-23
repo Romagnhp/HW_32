@@ -1,12 +1,15 @@
 import unittest
-from main import pow2
+from main import mySum, myAveage, myMaxElement, myMinElement
 
 class MyTest(unittest.TestCase):
-    def test_pow2(self):
-        
-        x = 4
-        y = 16
+    def test_mySum(self):
+        self.assertEqual(mySum(5,5), 10)
 
-        n = pow2(x)
+    def test_myAverage(self):
+        self.assertEqual(myAveage(5,1,3), 3)
 
-        self.assertEqual(n, y)
+    def test_myMaxElement(self):
+        self.assertEqual(myMaxElement(5,8,0,1), 8)
+
+    def test_myMinElement(self):
+        self.assertEqual(myMinElement(5,8,-1,1), -1)
